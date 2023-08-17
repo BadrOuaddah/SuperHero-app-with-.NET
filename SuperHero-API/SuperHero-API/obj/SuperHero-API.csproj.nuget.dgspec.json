@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\htdocs\\my-projects\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj": {}
+    "D:\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\htdocs\\my-projects\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj": {
+    "D:\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\htdocs\\my-projects\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj",
+        "projectUniqueName": "D:\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj",
         "projectName": "SuperHero-API",
-        "projectPath": "C:\\xampp\\htdocs\\my-projects\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj",
+        "projectPath": "D:\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\SuperHero-API.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\htdocs\\my-projects\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\obj\\",
+        "outputPath": "D:\\SuperHero-app-with-.NET\\SuperHero-API\\SuperHero-API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -65,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
