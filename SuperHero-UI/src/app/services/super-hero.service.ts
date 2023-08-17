@@ -9,13 +9,13 @@ import { environment } from 'src/environments/environment';
 })
 export class SuperHeroService {
 
-  // private url = "SuperHero";
+  private url = "SuperHero";
 
   constructor(private http: HttpClient) { }
 
   public getSuperHeroes(): Observable<SuperHero[]> {
 
 
-    return this.http.get<SuperHero[]>(`${environment.apiUrl}`);
+    return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
   }
 }
