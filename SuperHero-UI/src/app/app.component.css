@@ -1,3 +1,13 @@
 table, th, td {
-  border:1px solid black;
+  border: 1px solid black;
+}
+
+th {
+  color: olivedrab;
+  background-color: silver;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
