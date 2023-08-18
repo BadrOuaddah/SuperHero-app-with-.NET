@@ -20,6 +20,20 @@ namespace SuperHero_API.Controllers
                     FirstName = "Peter",
                     LastName = "Parker",
                     Place = "New York City"
+                },
+                new SuperHero
+                {
+                    Name = "Iron Man",
+                    FirstName = "Tony",
+                    LastName = "Stark",
+                    Place = "Malibu"
+                },
+                new SuperHero
+                {
+                    Name = "Wonder Woman",
+                    FirstName = "Diana",
+                    LastName = "Prince",
+                    Place = "Themyscira"
                 }
             };
         }
