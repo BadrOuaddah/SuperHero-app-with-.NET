@@ -13,7 +13,8 @@ namespace SuperHero_API.Controllers
     {
         private readonly DataContext _context;
 
-        public SuperHeroController(DataContext context) {
+        public SuperHeroController(DataContext context) 
+        {
             _context = context;
         }
 
@@ -30,5 +31,23 @@ namespace SuperHero_API.Controllers
             await _context.SaveChangesAsync();
             return Ok(await _context.SuperHeroes.ToListAsync());
         }
+
+        [HttpPut]
+        public async Task<ActionResult<List<SuperHero>>> UpdateSuperHero(SuperHero hero)
+        {
+            var dbHero = await _context.SuperHeroes.FindAsync(hero.Id);
+            if (dbHero == null)
+                return BadRequest("Hero not found.");
+
+            dbHero.Name = hero.Name;
+            dbHero.FirstName = hero.FirstName;
+            dbHero.LastName = hero.LastName;
+            dbHero.Place = hero.Place;
+
+            await _context.SaveChangesAsync();
+            return Ok(await _context.SuperHeroes.ToListAsync());
+        }
+
     }
+    
 }
