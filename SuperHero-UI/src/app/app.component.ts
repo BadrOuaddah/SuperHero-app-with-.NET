@@ -15,6 +15,7 @@ export class AppComponent {
   constructor(private SuperHeroService: SuperHeroService) { }
 
   ngOnInit(): void {
+    // lifeCycle hook
     this.SuperHeroService.getSuperHeroes().subscribe((result: SuperHero[]) => (this.heroes = result));
   }
 
