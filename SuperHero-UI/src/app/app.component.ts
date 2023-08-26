@@ -11,12 +11,21 @@ export class AppComponent {
   title = 'SuperHero-UI';
 
   heroes: SuperHero[] = [];
+  heroToEdit?: SuperHero;
 
   constructor(private SuperHeroService: SuperHeroService) { }
 
   ngOnInit(): void {
     // lifeCycle hook
     this.SuperHeroService.getSuperHeroes().subscribe((result: SuperHero[]) => (this.heroes = result));
+  }
+
+  initNewHero(){
+    this.heroToEdit = new SuperHero();
+  }
+
+  editHero(hero:SuperHero){
+    this.heroToEdit = hero;
   }
 
 }
