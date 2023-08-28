@@ -12,17 +12,21 @@ export class EditHeroComponent implements OnInit {
   @Output() heroesUpdated = new EventEmitter<SuperHero[]>();
   constructor(private superHeroService: SuperHeroService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  updateHero(hero : SuperHero){
-    this.superHeroService.updateSuperHeroes(hero).subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+  updateHero(hero: SuperHero) {
+    this.superHeroService
+      .updateSuperHeroes(hero)
+      .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
   }
-  deleteHero(hero : SuperHero){
-    this.superHeroService.deleteSuperHeroes(hero).subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+  deleteHero(hero: SuperHero) {
+    this.superHeroService
+      .deleteSuperHeroes(hero)
+      .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
   }
-  createHero(hero : SuperHero){
-    this.superHeroService.createSuperHeroes(hero).subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+  createHero(hero: SuperHero) {
+    this.superHeroService
+      .createSuperHeroes(hero)
+      .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
   }
-
 }

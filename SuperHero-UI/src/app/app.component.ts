@@ -5,7 +5,7 @@ import { SuperHeroService } from './services/super-hero.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'SuperHero-UI';
@@ -13,23 +13,23 @@ export class AppComponent {
   heroes: SuperHero[] = [];
   heroToEdit?: SuperHero;
 
-  constructor(private SuperHeroService: SuperHeroService) { }
+  constructor(private SuperHeroService: SuperHeroService) {}
 
   ngOnInit(): void {
-    // lifeCycle hook
-    this.SuperHeroService.getSuperHeroes().subscribe((result: SuperHero[]) => (this.heroes = result));
+    this.SuperHeroService.getSuperHeroes().subscribe(
+      (result: SuperHero[]) => (this.heroes = result)
+    );
   }
 
-  updateHeroList(heroes: SuperHero[]){
+  updateHeroList(heroes: SuperHero[]) {
     this.heroes = heroes;
   }
 
-  initNewHero(){
+  initNewHero() {
     this.heroToEdit = new SuperHero();
   }
 
-  editHero(hero:SuperHero){
+  editHero(hero: SuperHero) {
     this.heroToEdit = hero;
   }
-
 }

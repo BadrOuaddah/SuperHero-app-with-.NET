@@ -5,27 +5,34 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SuperHeroService {
+  private url = 'SuperHero';
 
-  private url = "SuperHero";
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   public getSuperHeroes(): Observable<SuperHero[]> {
     return this.http.get<SuperHero[]>(`${environment.apiUrl}/${this.url}`);
   }
 
-  public updateSuperHeroes(hero : SuperHero): Observable<SuperHero[]> {
-    return this.http.put<SuperHero[]>(`${environment.apiUrl}/${this.url}`,hero);
+  public updateSuperHeroes(hero: SuperHero): Observable<SuperHero[]> {
+    return this.http.put<SuperHero[]>(
+      `${environment.apiUrl}/${this.url}`,
+      hero
+    );
   }
 
-  public createSuperHeroes(hero : SuperHero): Observable<SuperHero[]> {
-    return this.http.post<SuperHero[]>(`${environment.apiUrl}/${this.url}`,hero);
+  public createSuperHeroes(hero: SuperHero): Observable<SuperHero[]> {
+    return this.http.post<SuperHero[]>(
+      `${environment.apiUrl}/${this.url}`,
+      hero
+    );
   }
 
-  public deleteSuperHeroes(hero : SuperHero): Observable<SuperHero[]> {
-    return this.http.delete<SuperHero[]>(`${environment.apiUrl}/${this.url}/${hero.id}`);
+  public deleteSuperHeroes(hero: SuperHero): Observable<SuperHero[]> {
+    return this.http.delete<SuperHero[]>(
+      `${environment.apiUrl}/${this.url}/${hero.id}`
+    );
   }
 }
