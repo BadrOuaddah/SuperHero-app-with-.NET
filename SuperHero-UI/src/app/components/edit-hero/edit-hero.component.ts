@@ -14,6 +14,12 @@ export class EditHeroComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  isVisible = true;
+
+  onClose() {
+    this.isVisible = false;
+  }
+
   updateHero(hero: SuperHero) {
     this.superHeroService
       .updateSuperHeroes(hero)
