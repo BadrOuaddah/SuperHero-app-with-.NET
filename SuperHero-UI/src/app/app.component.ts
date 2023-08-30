@@ -23,19 +23,17 @@ export class AppComponent {
 
   showEditHero = false;
 
-  toggleEditHero() {
-    this.showEditHero = !this.showEditHero;
-  }
-
   updateHeroList(heroes: SuperHero[]) {
     this.heroes = heroes;
   }
 
   initNewHero() {
+    this.showEditHero = !this.showEditHero;
     this.heroToEdit = new SuperHero();
   }
 
   editHero(hero: SuperHero) {
+    this.showEditHero = !this.showEditHero;
     this.heroToEdit = hero;
   }
 }
