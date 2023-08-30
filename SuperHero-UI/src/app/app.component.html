@@ -1,5 +1,5 @@
 <div class="center">
-  <button (click)="initNewHero()">Create New Hero</button>
+  <button (click)="toggleEditHero(); initNewHero()">Create New Hero</button>
 </div>
 <br />
 <table class="center" style="width: 50%">
@@ -24,6 +24,6 @@
 <div class="center">
   <app-edit-hero
     [hero]="heroToEdit"
-    (heroesUpdated)="updateHeroList($event)"
+    (heroesUpdated)="updateHeroList($event)" *ngIf="showEditHero"
   ></app-edit-hero>
 </div>

@@ -21,6 +21,12 @@ export class AppComponent {
     );
   }
 
+  showEditHero = false;
+
+  toggleEditHero() {
+    this.showEditHero = !this.showEditHero;
+  }
+
   updateHeroList(heroes: SuperHero[]) {
     this.heroes = heroes;
   }
