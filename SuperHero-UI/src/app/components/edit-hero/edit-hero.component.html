@@ -1,29 +1,35 @@
 <div *ngIf="hero">
-    <div *ngIf="isVisible">
-        <h2>{{ hero.name }}</h2>
-        <div>
-          Name :
-          <input [(ngModel)]="hero.name" placeholder="Name" />
-        </div>
-        <br />
-        <div>
-          First Name :
-          <input [(ngModel)]="hero.firstName" placeholder="First Name" />
-        </div>
-        <br />
-        <div>
-          Last Name :
-          <input [(ngModel)]="hero.lastName" placeholder="Last Name" />
-        </div>
-        <br />
-        <div>
-          Place :
-          <input [(ngModel)]="hero.place" placeholder="Place" />
-        </div>
-        <br />
-        <button (click)="updateHero(hero)" *ngIf="hero.id">Save</button>
-        <button (click)="deleteHero(hero)" *ngIf="hero.id">Delete</button>
-        <button (click)="createHero(hero); onClose()" *ngIf="!hero.id">Create</button>
-        <button (click)="onClose()">Close</button>
+  <div *ngIf="isVisible">
+    <blockquote class="electric bubble">
+      <h2>{{ hero.name }}</h2>
+      <h2>{{ hero.place }}</h2>
+    </blockquote>
+    <div>
+      Name :
+      <input [(ngModel)]="hero.name" placeholder="Name" />
     </div>
+    <br />
+    <div>
+      First Name :
+      <input [(ngModel)]="hero.firstName" placeholder="First Name" />
+    </div>
+    <br />
+    <div>
+      Last Name :
+      <input [(ngModel)]="hero.lastName" placeholder="Last Name" />
+    </div>
+    <br />
+    <div>
+      Place :
+      <input [(ngModel)]="hero.place" placeholder="Place" />
+    </div>
+
+    <br />
+    <button (click)="updateHero(hero)" *ngIf="hero.id">Save</button>
+    <button (click)="deleteHero(hero)" *ngIf="hero.id">Delete</button>
+    <button (click)="createHero(hero); onClose()" *ngIf="!hero.id">
+      Create
+    </button>
+    <button (click)="onClose()">Close</button>
+  </div>
 </div>
