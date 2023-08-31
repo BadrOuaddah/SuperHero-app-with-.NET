@@ -1,9 +1,4 @@
 <app-navbar/>
-<br>
-<div class="center">
-  <button style="color: #F30003;" class="hero-button" (click)="initNewHero()">Create New Hero</button>
-</div>
-<br />
 <table class="center" style="width: 50%">
   <thead>
     <th>Name</th>
@@ -18,14 +13,19 @@
       <td>{{ hero.firstName }}</td>
       <td>{{ hero.lastName }}</td>
       <td>{{ hero.place }}</td>
-      <td><button (click)="editHero(hero)">Edit</button></td>
+      <td><button class="edit-button" (click)="editHero(hero)">Edit</button></td>
     </tr>
   </tbody>
 </table>
-
+<br>
+<div class="center">
+  <button class="hero-button" role="button" (click)="initNewHero()">Create New Hero</button>
+</div>
+<br>
 <div class="center">
   <app-edit-hero
     [hero]="heroToEdit"
     (heroesUpdated)="updateHeroList($event)" *ngIf="showEditHero"
   ></app-edit-hero>
 </div>
+<br>
