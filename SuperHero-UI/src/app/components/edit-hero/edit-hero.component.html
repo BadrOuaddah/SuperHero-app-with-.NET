@@ -25,11 +25,25 @@
     </div>
 
     <br />
-    <button (click)="updateHero(hero)" *ngIf="hero.id">Save</button>
-    <button (click)="deleteHero(hero)" *ngIf="hero.id">Delete</button>
+    <button
+      class="save-button button-with-space"
+      (click)="updateHero(hero)"
+      *ngIf="hero.id"
+    >
+      Save
+    </button>
+    <button
+      class="delete-button button-with-space"
+      (click)="deleteHero(hero)"
+      *ngIf="hero.id"
+    >
+      Delete
+    </button>
     <button (click)="createHero(hero); onClose()" *ngIf="!hero.id">
       Create
     </button>
-    <button (click)="onClose()">Close</button>
+    <button class="close-button button-with-space" (click)="onClose()">
+      Close
+    </button>
   </div>
 </div>
