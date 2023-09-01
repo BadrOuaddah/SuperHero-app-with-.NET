@@ -45,7 +45,7 @@
     >
       Delete
     </button>
-    <button (click)="createHero(hero); onClose()" *ngIf="!hero.id">
+    <button class="save-button button-with-space" (click)="createHero(hero); onClose()" *ngIf="!hero.id">
       Create
     </button>
     <button class="close-button button-with-space" (click)="onClose()">
