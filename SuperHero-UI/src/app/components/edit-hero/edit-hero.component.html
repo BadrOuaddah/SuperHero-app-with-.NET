@@ -4,26 +4,32 @@
       <h2>{{ hero.name }}</h2>
       <h2>{{ hero.place }}</h2>
     </blockquote>
-    <div>
-      Name :
-      <input [(ngModel)]="hero.name" placeholder="Name" />
-    </div>
-    <br />
-    <div>
-      First Name :
-      <input [(ngModel)]="hero.firstName" placeholder="First Name" />
-    </div>
-    <br />
-    <div>
-      Last Name :
-      <input [(ngModel)]="hero.lastName" placeholder="Last Name" />
-    </div>
-    <br />
-    <div>
-      Place :
-      <input [(ngModel)]="hero.place" placeholder="Place" />
-    </div>
 
+    <div class="box">
+        <div class="card">
+            <div>
+                <br>
+                <br>
+              Name :
+              <input [(ngModel)]="hero.name" placeholder="Name" />
+            </div>
+            <br />
+            <div>
+              First Name :
+              <input [(ngModel)]="hero.firstName" placeholder="First Name" />
+            </div>
+            <br />
+            <div>
+              Last Name :
+              <input [(ngModel)]="hero.lastName" placeholder="Last Name" />
+            </div>
+            <br />
+            <div>
+              Place :
+              <input [(ngModel)]="hero.place" placeholder="Place" />
+            </div>
+        </div>
+    </div>
     <br />
     <button
       class="save-button button-with-space"
