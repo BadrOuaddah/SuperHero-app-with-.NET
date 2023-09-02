@@ -2,7 +2,10 @@
 @import "/node_modules/bootstrap/dist/css/bootstrap.css";
 
 body {
-    background-image: url("app/images/comic.jpg");
+    background-image: url("app/images/comic-transparency.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
