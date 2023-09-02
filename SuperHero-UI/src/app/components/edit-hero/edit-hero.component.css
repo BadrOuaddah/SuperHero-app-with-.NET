@@ -81,7 +81,7 @@ blockquote.electric span {
 
 .delete-button {
     appearance: none;
-    background-color: #d11a2a;
+    background-color: #d11a1a;
     border: 1px solid rgba(27, 31, 35, .15);
     border-radius: 6px;
     box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
@@ -110,7 +110,7 @@ blockquote.electric span {
 }
 
 .delete-button:hover {
-    background-color: #f83545;
+    background-color: #f83535;
 }
 
 .delete-button:focus {
@@ -127,57 +127,6 @@ blockquote.electric span {
 
 .delete-button:active {
     background-color: #8e2929;
-    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
-
-.close-button {
-    appearance: none;
-    background-color: #c8d11a;
-    border: 1px solid rgba(27, 31, 35, .15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 6px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-
-.close-button:focus:not(:focus-visible):not(.focus-visible) {
-    box-shadow: none;
-    outline: none;
-}
-
-.close-button:hover {
-    background-color: #f8f235;
-}
-
-.close-button:focus {
-    box-shadow: rgba(164, 164, 46, 0.4) 0 0 0 3px;
-    outline: none;
-}
-
-.close-button:disabled {
-    background-color: #d1d394;
-    border-color: rgba(27, 31, 35, .1);
-    color: rgba(255, 255, 255, .8);
-    cursor: default;
-}
-
-.close-button:active {
-    background-color: #8e8729;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
