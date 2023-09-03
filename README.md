@@ -54,7 +54,7 @@ This app is TypeScript framework (Angular) with CSS framework (Bootstrap) and C#
    ```bash
    git clone https://github.com/BadrOuaddah/SuperHero-app-with-.NET.git
    ```
-+ Run the app in the development mode.\
++ Run the app in the development mode.
   
   ```bash
    ng serve
