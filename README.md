@@ -62,3 +62,12 @@ This app is TypeScript framework (Angular) with CSS framework (Bootstrap) and C#
      
  + Open [http://localhost:4200](http://localhost:4200) to view it in your browser.
    
+ + Install Visual Studio on your PC by click this link : https://visualstudio.microsoft.com/downloads/
+
+ + Install SQL Server Express and SQL Server Management Studio
+
+ + Run SuperHero_API
+
+ + Type https://localhost:7143/swagger/index.html on your browser to testing API calls
+
+   
