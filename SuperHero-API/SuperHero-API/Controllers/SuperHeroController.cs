@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SuperHero_API.Data;
@@ -56,10 +55,7 @@ namespace SuperHero_API.Controllers
                 return BadRequest("Hero not found.");
             _context.SuperHeroes.Remove(dbHero);
             await _context.SaveChangesAsync();
-
             return Ok(await _context.SuperHeroes.ToListAsync());
         }
-
     }
-    
 }
